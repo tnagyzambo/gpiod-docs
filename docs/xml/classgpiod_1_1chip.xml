@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgpiod_1_1chip" kind="class" language="C++" prot="public">
+    <compoundname>gpiod::chip</compoundname>
+    <includes refid="gpiod_8hpp" local="no">gpiod.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>@11</name>
+        <enumvalue id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0abd55ebb95d9b6b603e7af686a7adf463" prot="public">
+          <name>OPEN_LOOKUP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Open based on the best guess what the supplied string is. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a92fb794d2e9e006bd124602d826b4f6e" prot="public">
+          <name>OPEN_BY_PATH</name>
+          <briefdescription>
+<para>Assume the string is a path to the GPIO chardev. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a78a1d404c076e2fc37bf0e3dd8eb6c37" prot="public">
+          <name>OPEN_BY_NAME</name>
+          <briefdescription>
+<para>Assume the string is the name of the chip. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a7dc7a94911dff7c8242c683bed291dab" prot="public">
+          <name>OPEN_BY_LABEL</name>
+          <briefdescription>
+<para>Assume the string is the label of the GPIO chip. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a451215126c334d4883041a181e3002ec" prot="public">
+          <name>OPEN_BY_NUMBER</name>
+          <briefdescription>
+<para>Assume the string is the number of the GPIO chip. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Affect the way in which <ref refid="classgpiod_1_1chip_1a49245371f40ca38d898a82ef80ec84ce" kindref="member">chip::chip</ref> and <ref refid="classgpiod_1_1chip_1ad87f45ca52ea6c7c486482cfbdcd876c" kindref="member">chip::open</ref> will try to open a GPIO chip character device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="186" column="6" bodyfile="bindings/cxx/gpiod.hpp" bodystart="186" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgpiod_1_1chip_1a47fb86bb0e2d8329f1e9b35d8ef2485d" prot="private" static="no" mutable="no">
+        <type>::std::shared_ptr&lt;::gpiod_chip &gt;</type>
+        <definition>::std::shared_ptr&lt;::gpiod_chip&gt; gpiod::chip::_m_chip</definition>
+        <argsstring></argsstring>
+        <name>_m_chip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="205" column="19" bodyfile="bindings/cxx/gpiod.hpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpiod_1_1chip_1a0ca3e59e21db1a24909e2dd32690718c" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend gpiod::chip::chip_iter</definition>
+        <argsstring></argsstring>
+        <name>chip_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="207" column="8" bodyfile="bindings/cxx/gpiod.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpiod_1_1chip_1a32146ee95a33cd5240884475ae5aab5f" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend gpiod::chip::line_iter</definition>
+        <argsstring></argsstring>
+        <name>line_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="208" column="8" bodyfile="bindings/cxx/gpiod.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpiod_1_1chip_1a49245371f40ca38d898a82ef80ec84ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::chip</definition>
+        <argsstring>(void)=default</argsstring>
+        <name>chip</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty GPIO chip object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="49" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a8de2fbbfb2e278a26c1a494b5d389898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::chip</definition>
+        <argsstring>(const ::std::string &amp;device, int how=OPEN_LOOKUP)</argsstring>
+        <name>chip</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>how</declname>
+          <defval><ref refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0abd55ebb95d9b6b603e7af686a7adf463" kindref="member">OPEN_LOOKUP</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Opens the chip using <ref refid="classgpiod_1_1chip_1ad87f45ca52ea6c7c486482cfbdcd876c" kindref="member">chip::open</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String describing the GPIO chip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>how</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates how the chip should be opened. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="56" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1acc5e83ece716058523d2656b9bf5b389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::chip</definition>
+        <argsstring>(const chip &amp;other)=default</argsstring>
+        <name>chip</name>
+        <param>
+          <type>const <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>References the object held by other. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other chip object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="62" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a725e037955a3e5c35c7b1aa69e453b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::chip</definition>
+        <argsstring>(chip &amp;&amp;other)=default</argsstring>
+        <name>chip</name>
+        <param>
+          <type><ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>References the object held by other. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other chip object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="68" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a9ae5cc6884ef449112b7e065fc9e5d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+        <definition>GPIOD_API chip&amp; gpiod::chip::operator=</definition>
+        <argsstring>(const chip &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>References the object held by other. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other chip object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="75" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a88e8f8eabc106e5e6dfecca9ef7b1803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+        <definition>GPIOD_API chip&amp; gpiod::chip::operator=</definition>
+        <argsstring>(chip &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>References the object held by other. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other chip object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="82" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1abd800bced54fe5fcc2b445bf5978c139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::~chip</definition>
+        <argsstring>(void)=default</argsstring>
+        <name>~chip</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unreferences the internal chip object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="87" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1ad87f45ca52ea6c7c486482cfbdcd876c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> void</type>
+        <definition>GPIOD_API void gpiod::chip::open</definition>
+        <argsstring>(const ::std::string &amp;device, int how=OPEN_LOOKUP)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>how</declname>
+          <defval><ref refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0abd55ebb95d9b6b603e7af686a7adf463" kindref="member">OPEN_LOOKUP</ref></defval>
+        </param>
+        <briefdescription>
+<para>Open a GPIO chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String describing the GPIO chip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>how</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates how the chip should be opened.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+If the object already holds a reference to an open chip, it will be closed and the reference reset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="97" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a692fc91ed2cad991b73c8c4ae5880dd4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> void</type>
+        <definition>GPIOD_API void gpiod::chip::reset</definition>
+        <argsstring>(void) noexcept</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reset the internal smart pointer owned by this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="102" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a6d91c8aaf23194160a61e76b7288aedd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> ::std::string</type>
+        <definition>GPIOD_API ::std::string gpiod::chip::name</definition>
+        <argsstring>(void) const</argsstring>
+        <name>name</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the name of the chip held by this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name of the GPIO chip. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="108" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a6f5a546bce5c2a9520910e0e70696634" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> ::std::string</type>
+        <definition>GPIOD_API ::std::string gpiod::chip::label</definition>
+        <argsstring>(void) const</argsstring>
+        <name>label</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the label of the chip held by this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Label of the GPIO chip. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="114" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a3f4ac6cdbcdd35b6f311a9726c1b90af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> unsigned int</type>
+        <definition>GPIOD_API unsigned int gpiod::chip::num_lines</definition>
+        <argsstring>(void) const</argsstring>
+        <name>num_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of lines exposed by this chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of lines. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="120" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1ade52746fdb3aff23f8b993c474d28230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1line" kindref="compound">line</ref></type>
+        <definition>GPIOD_API line gpiod::chip::get_line</definition>
+        <argsstring>(unsigned int offset) const</argsstring>
+        <name>get_line</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get the line exposed by this chip at given offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset of the line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Line object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="127" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a488c305877ce05f0b81115684d7056b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1line" kindref="compound">line</ref></type>
+        <definition>GPIOD_API line gpiod::chip::find_line</definition>
+        <argsstring>(const ::std::string &amp;name) const</argsstring>
+        <name>find_line</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the line exposed by this chip by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Line object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="134" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1ad5126102bf43c1dc6e40daa461792314" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref></type>
+        <definition>GPIOD_API line_bulk gpiod::chip::get_lines</definition>
+        <argsstring>(const ::std::vector&lt; unsigned int &gt; &amp;offsets) const</argsstring>
+        <name>get_lines</name>
+        <param>
+          <type>const ::std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>offsets</declname>
+        </param>
+        <briefdescription>
+<para>Get a set of lines exposed by this chip at given offsets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of line offsets. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Set of lines held by a <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="141" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1aa06bbf929dc38ad287d39b4ea689c64e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref></type>
+        <definition>GPIOD_API line_bulk gpiod::chip::get_all_lines</definition>
+        <argsstring>(void) const</argsstring>
+        <name>get_all_lines</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get all lines exposed by this chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All lines exposed by this chip held by a <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="147" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1af74c9f7c9bd4b3164f1ca1eeb75cb1d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref></type>
+        <definition>GPIOD_API line_bulk gpiod::chip::find_lines</definition>
+        <argsstring>(const ::std::vector&lt;::std::string &gt; &amp;names) const</argsstring>
+        <name>find_lines</name>
+        <param>
+          <type>const ::std::vector&lt;::std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+<para>Get a set of lines exposed by this chip by their names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of line names. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Set of lines held by a <ref refid="classgpiod_1_1line__bulk" kindref="compound">line_bulk</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="154" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1aeac69ce3e10d50342c8328fb6bbb71e4" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> bool</type>
+        <definition>GPIOD_API bool gpiod::chip::operator==</definition>
+        <argsstring>(const chip &amp;rhs) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand side of the equation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if rhs references the same chip. False otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="161" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1aa74212aa52cd112c52fd1daf89016b11" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> bool</type>
+        <definition>GPIOD_API bool gpiod::chip::operator!=</definition>
+        <argsstring>(const chip &amp;rhs) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classgpiod_1_1chip" kindref="compound">chip</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Inequality operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand side of the equation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False if rhs references the same chip. True otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="168" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a651f61091ae1cea7b410f0bb7f90ae0b" prot="public" static="no" const="yes" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref></type>
+        <definition>GPIOD_API gpiod::chip::operator bool</definition>
+        <argsstring>(void) const noexcept</argsstring>
+        <name>operator bool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if this object holds a reference to a GPIO chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if this object references a GPIO chip, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="174" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1adcf95d33b6f9fb7b59aae3478c989ede" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> bool</type>
+        <definition>GPIOD_API bool gpiod::chip::operator!</definition>
+        <argsstring>(void) const noexcept</argsstring>
+        <name>operator!</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if this object doesn&apos;t hold a reference to a GPIO chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False if this object references a GPIO chip, true otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="180" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgpiod_1_1chip_1afc6cf082ad49387e9cc321f71cac3135" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpiod::chip::chip</definition>
+        <argsstring>(::gpiod_chip *chip)</argsstring>
+        <name>chip</name>
+        <param>
+          <type>::gpiod_chip *</type>
+          <declname>chip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpiod_1_1chip_1a3ec8cd3f00cdeb946899a105be3ed908" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpiod::chip::throw_if_noref</definition>
+        <argsstring>(void) const</argsstring>
+        <name>throw_if_noref</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="203" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a GPIO chip. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Internally this class holds a smart pointer to an open GPIO chip descriptor. Multiple objects of this class can reference the same chip. The chip is closed and all resources freed when the last reference is dropped. </para>
+    </detaileddescription>
+    <location file="bindings/cxx/gpiod.hpp" line="43" column="1" bodyfile="bindings/cxx/gpiod.hpp" bodystart="42" bodyend="209"/>
+    <listofallmembers>
+      <member refid="classgpiod_1_1chip_1a47fb86bb0e2d8329f1e9b35d8ef2485d" prot="private" virt="non-virtual"><scope>gpiod::chip</scope><name>_m_chip</name></member>
+      <member refid="classgpiod_1_1chip_1a49245371f40ca38d898a82ef80ec84ce" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>chip</name></member>
+      <member refid="classgpiod_1_1chip_1a8de2fbbfb2e278a26c1a494b5d389898" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>chip</name></member>
+      <member refid="classgpiod_1_1chip_1acc5e83ece716058523d2656b9bf5b389" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>chip</name></member>
+      <member refid="classgpiod_1_1chip_1a725e037955a3e5c35c7b1aa69e453b65" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>chip</name></member>
+      <member refid="classgpiod_1_1chip_1afc6cf082ad49387e9cc321f71cac3135" prot="private" virt="non-virtual"><scope>gpiod::chip</scope><name>chip</name></member>
+      <member refid="classgpiod_1_1chip_1a0ca3e59e21db1a24909e2dd32690718c" prot="private" virt="non-virtual"><scope>gpiod::chip</scope><name>chip_iter</name></member>
+      <member refid="classgpiod_1_1chip_1a488c305877ce05f0b81115684d7056b9" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>find_line</name></member>
+      <member refid="classgpiod_1_1chip_1af74c9f7c9bd4b3164f1ca1eeb75cb1d2" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>find_lines</name></member>
+      <member refid="classgpiod_1_1chip_1aa06bbf929dc38ad287d39b4ea689c64e" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>get_all_lines</name></member>
+      <member refid="classgpiod_1_1chip_1ade52746fdb3aff23f8b993c474d28230" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>get_line</name></member>
+      <member refid="classgpiod_1_1chip_1ad5126102bf43c1dc6e40daa461792314" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>get_lines</name></member>
+      <member refid="classgpiod_1_1chip_1a6f5a546bce5c2a9520910e0e70696634" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>label</name></member>
+      <member refid="classgpiod_1_1chip_1a32146ee95a33cd5240884475ae5aab5f" prot="private" virt="non-virtual"><scope>gpiod::chip</scope><name>line_iter</name></member>
+      <member refid="classgpiod_1_1chip_1a6d91c8aaf23194160a61e76b7288aedd" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>name</name></member>
+      <member refid="classgpiod_1_1chip_1a3f4ac6cdbcdd35b6f311a9726c1b90af" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>num_lines</name></member>
+      <member refid="classgpiod_1_1chip_1ad87f45ca52ea6c7c486482cfbdcd876c" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>open</name></member>
+      <member refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a7dc7a94911dff7c8242c683bed291dab" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>OPEN_BY_LABEL</name></member>
+      <member refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a78a1d404c076e2fc37bf0e3dd8eb6c37" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>OPEN_BY_NAME</name></member>
+      <member refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a451215126c334d4883041a181e3002ec" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>OPEN_BY_NUMBER</name></member>
+      <member refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0a92fb794d2e9e006bd124602d826b4f6e" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>OPEN_BY_PATH</name></member>
+      <member refid="classgpiod_1_1chip_1a2db54cce750d63ff8cc13790a33138a0abd55ebb95d9b6b603e7af686a7adf463" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>OPEN_LOOKUP</name></member>
+      <member refid="classgpiod_1_1chip_1a651f61091ae1cea7b410f0bb7f90ae0b" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator bool</name></member>
+      <member refid="classgpiod_1_1chip_1adcf95d33b6f9fb7b59aae3478c989ede" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator!</name></member>
+      <member refid="classgpiod_1_1chip_1aa74212aa52cd112c52fd1daf89016b11" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator!=</name></member>
+      <member refid="classgpiod_1_1chip_1a9ae5cc6884ef449112b7e065fc9e5d6c" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator=</name></member>
+      <member refid="classgpiod_1_1chip_1a88e8f8eabc106e5e6dfecca9ef7b1803" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator=</name></member>
+      <member refid="classgpiod_1_1chip_1aeac69ce3e10d50342c8328fb6bbb71e4" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>operator==</name></member>
+      <member refid="classgpiod_1_1chip_1a692fc91ed2cad991b73c8c4ae5880dd4" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>reset</name></member>
+      <member refid="classgpiod_1_1chip_1a3ec8cd3f00cdeb946899a105be3ed908" prot="private" virt="non-virtual"><scope>gpiod::chip</scope><name>throw_if_noref</name></member>
+      <member refid="classgpiod_1_1chip_1abd800bced54fe5fcc2b445bf5978c139" prot="public" virt="non-virtual"><scope>gpiod::chip</scope><name>~chip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

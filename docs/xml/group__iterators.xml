@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__iterators" kind="group">
+    <compoundname>iterators</compoundname>
+    <title>Iterators for GPIO chips and lines</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__iterators_1ga183d282b37d7f3768022a4bdd853e020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gpiod_chip_iter *</type>
+        <definition>struct gpiod_chip_iter* gpiod_chip_iter_new</definition>
+        <argsstring>(void) GPIOD_API</argsstring>
+        <name>gpiod_chip_iter_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create a new gpiochip iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to a new chip iterator object or NULL if an error occurred.</para>
+</simplesect>
+Internally this routine scans the /dev/ directory for GPIO chip device files, opens them and stores their the handles until <ref refid="group__iterators_1ga720e169dee0010a1894fb9dc20b869f5" kindref="member">gpiod_chip_iter_free</ref> or <ref refid="group__iterators_1ga1b03170f6ec33f360b0abf4aeaab9d22" kindref="member">gpiod_chip_iter_free_noclose</ref> is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1646" column="22" declfile="include/gpiod.h" declline="1646" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1ga720e169dee0010a1894fb9dc20b869f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpiod_chip_iter_free</definition>
+        <argsstring>(struct gpiod_chip_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_chip_iter_free</name>
+        <param>
+          <type>struct gpiod_chip_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Release all resources allocated for the gpiochip iterator and close the most recently opened gpiochip (if any). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gpiochip iterator object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1653" column="6" declfile="include/gpiod.h" declline="1653" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1ga1b03170f6ec33f360b0abf4aeaab9d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpiod_chip_iter_free_noclose</definition>
+        <argsstring>(struct gpiod_chip_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_chip_iter_free_noclose</name>
+        <param>
+          <type>struct gpiod_chip_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Release all resources allocated for the gpiochip iterator but don&apos;t close the most recently opened gpiochip (if any). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gpiochip iterator object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Users may want to break the loop when iterating over gpiochips and keep the most recently opened chip active while freeing the iterator data. This routine enables that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1664" column="6" declfile="include/gpiod.h" declline="1664" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1gaa4d6dd096c1339842321b5575648e481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gpiod_chip *</type>
+        <definition>struct gpiod_chip* gpiod_chip_iter_next</definition>
+        <argsstring>(struct gpiod_chip_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_chip_iter_next</name>
+        <param>
+          <type>struct gpiod_chip_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Get the next gpiochip handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gpiochip iterator object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the next open gpiochip handle or NULL if no more chips are present in the system. </para>
+</simplesect>
+<simplesect kind="note"><para>The previous chip handle will be closed using <ref refid="group__iterators_1ga720e169dee0010a1894fb9dc20b869f5" kindref="member">gpiod_chip_iter_free</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1674" column="1" declfile="include/gpiod.h" declline="1674" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1ga83b13414a8b156cf89a1a2f34c2d10f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gpiod_chip *</type>
+        <definition>struct gpiod_chip* gpiod_chip_iter_next_noclose</definition>
+        <argsstring>(struct gpiod_chip_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_chip_iter_next_noclose</name>
+        <param>
+          <type>struct gpiod_chip_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Get the next gpiochip handle without closing the previous one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gpiochip iterator object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the next open gpiochip handle or NULL if no more chips are present in the system. </para>
+</simplesect>
+<simplesect kind="note"><para>This function works just like <ref refid="group__iterators_1gaa4d6dd096c1339842321b5575648e481" kindref="member">gpiod_chip_iter_next</ref> but doesn&apos;t close the most recently opened chip handle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1685" column="1" declfile="include/gpiod.h" declline="1685" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1ga1ba3bd48c6d314a685352126b9781f89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gpiod_line_iter *</type>
+        <definition>struct gpiod_line_iter* gpiod_line_iter_new</definition>
+        <argsstring>(struct gpiod_chip *chip) GPIOD_API</argsstring>
+        <name>gpiod_line_iter_new</name>
+        <param>
+          <type>struct gpiod_chip *</type>
+          <declname>chip</declname>
+        </param>
+        <briefdescription>
+<para>Create a new line iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Active gpiochip handle over the lines of which we want to iterate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New line iterator or NULL if an error occurred. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1724" column="1" declfile="include/gpiod.h" declline="1724" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1ga83403e35c33d994ce8fdf295059fd80b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpiod_line_iter_free</definition>
+        <argsstring>(struct gpiod_line_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_line_iter_free</name>
+        <param>
+          <type>struct gpiod_line_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Free all resources associated with a GPIO line iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line iterator object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1730" column="6" declfile="include/gpiod.h" declline="1730" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__iterators_1gaf8b739cfad846a4d28eb3cdb9d821b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct gpiod_line *</type>
+        <definition>struct gpiod_line* gpiod_line_iter_next</definition>
+        <argsstring>(struct gpiod_line_iter *iter) GPIOD_API</argsstring>
+        <name>gpiod_line_iter_next</name>
+        <param>
+          <type>struct gpiod_line_iter *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Get the next GPIO line handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GPIO line iterator object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the next GPIO line handle or NULL if there are no more lines left. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1739" column="1" declfile="include/gpiod.h" declline="1739" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__iterators_1ga9c4bd122b8972636d6c7645be3834f5c" prot="public" static="no">
+        <name>gpiod_foreach_chip</name>
+        <param><defname>iter</defname></param>
+        <param><defname>chip</defname></param>
+        <initializer>	for ((chip) = <ref refid="group__iterators_1gaa4d6dd096c1339842321b5575648e481" kindref="member">gpiod_chip_iter_next</ref>(iter);			\
+	     (chip);							\
+	     (chip) = <ref refid="group__iterators_1gaa4d6dd096c1339842321b5575648e481" kindref="member">gpiod_chip_iter_next</ref>(iter))</initializer>
+        <briefdescription>
+<para>Iterate over all GPIO chips present in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An initialized GPIO chip iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a GPIO chip handle. On each iteration the newly opened chip handle is assigned to this argument.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The user must not close the GPIO chip manually - instead the previous chip handle is closed automatically on the next iteration. The last chip to be opened is closed internally by <ref refid="group__iterators_1ga720e169dee0010a1894fb9dc20b869f5" kindref="member">gpiod_chip_iter_free</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1697" column="9" bodyfile="include/gpiod.h" bodystart="1697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__iterators_1gabcbe670583cfff4ca4b4ad7be2d25a3b" prot="public" static="no">
+        <name>gpiod_foreach_chip_noclose</name>
+        <param><defname>iter</defname></param>
+        <param><defname>chip</defname></param>
+        <initializer>	for ((chip) = <ref refid="group__iterators_1ga83b13414a8b156cf89a1a2f34c2d10f7" kindref="member">gpiod_chip_iter_next_noclose</ref>(iter);		\
+	     (chip);							\
+	     (chip) = <ref refid="group__iterators_1ga83b13414a8b156cf89a1a2f34c2d10f7" kindref="member">gpiod_chip_iter_next_noclose</ref>(iter))</initializer>
+        <briefdescription>
+<para>Iterate over all chips present in the system without closing them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An initialized GPIO chip iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a GPIO chip handle. On each iteration the newly opened chip handle is assigned to this argument.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The user must close all the GPIO chips manually after use, until then, the chips remain open. Free the iterator by calling <ref refid="group__iterators_1ga1b03170f6ec33f360b0abf4aeaab9d22" kindref="member">gpiod_chip_iter_free_noclose</ref> to avoid closing the last chip automatically. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1712" column="9" bodyfile="include/gpiod.h" bodystart="1712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__iterators_1ga8e16c4290e83b780259896ac6cd1d886" prot="public" static="no">
+        <name>gpiod_foreach_line</name>
+        <param><defname>iter</defname></param>
+        <param><defname>line</defname></param>
+        <initializer>	for ((line) = <ref refid="group__iterators_1gaf8b739cfad846a4d28eb3cdb9d821b79" kindref="member">gpiod_line_iter_next</ref>(iter);			\
+	     (line);							\
+	     (line) = <ref refid="group__iterators_1gaf8b739cfad846a4d28eb3cdb9d821b79" kindref="member">gpiod_line_iter_next</ref>(iter))</initializer>
+        <briefdescription>
+<para>Iterate over all GPIO lines of a single chip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An initialized GPIO line iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a GPIO line handle - on each iteration, the next GPIO line will be assigned to this argument. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1747" column="9" bodyfile="include/gpiod.h" bodystart="1747" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>These functions and data structures allow easy iterating over GPIO chips and lines. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

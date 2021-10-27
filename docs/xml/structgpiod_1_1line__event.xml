@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgpiod_1_1line__event" kind="struct" language="C++" prot="public">
+    <compoundname>gpiod::line_event</compoundname>
+    <includes refid="gpiod_8hpp" local="no">gpiod.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structgpiod_1_1line__event_1a8d081d42317ff0a22c812f14d5f8f88c" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>@16</name>
+        <enumvalue id="structgpiod_1_1line__event_1a8d081d42317ff0a22c812f14d5f8f88ca1d749d97ab6e159c6a1ec65870dcb1b5" prot="public">
+          <name>RISING_EDGE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Rising edge event. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__event_1a8d081d42317ff0a22c812f14d5f8f88ca26affa3dac9afd55293addaf734932f5" prot="public">
+          <name>FALLING_EDGE</name>
+          <briefdescription>
+<para>Falling edge event. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible event types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="551" column="6" bodyfile="bindings/cxx/gpiod.hpp" bodystart="551" bodyend="556"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgpiod_1_1line__event_1a82eafecf13a12825abcc63b94c279a9f" prot="public" static="no" mutable="no">
+        <type>::std::chrono::nanoseconds</type>
+        <definition>::std::chrono::nanoseconds gpiod::line_event::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Best estimate of time of event occurrence in nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="558" column="28" bodyfile="bindings/cxx/gpiod.hpp" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__event_1a38f3eacf0564613e91b8aa75542cbb47" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gpiod::line_event::event_type</definition>
+        <argsstring></argsstring>
+        <name>event_type</name>
+        <briefdescription>
+<para>Type of the event that occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="560" column="5" bodyfile="bindings/cxx/gpiod.hpp" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__event_1afa64ecd8aae67c292be490e14d900290" prot="public" static="no" mutable="no">
+        <type><ref refid="classgpiod_1_1line" kindref="compound">line</ref></type>
+        <definition>line gpiod::line_event::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+<para>Line object referencing the GPIO line on which the event occurred. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="562" column="6" bodyfile="bindings/cxx/gpiod.hpp" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a single GPIO line event. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>gpiod::line</label>
+        <link refid="classgpiod_1_1line"/>
+      </node>
+      <node id="1">
+        <label>gpiod::line_event</label>
+        <link refid="structgpiod_1_1line__event"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>source</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="bindings/cxx/gpiod.hpp" line="547" column="1" bodyfile="bindings/cxx/gpiod.hpp" bodystart="546" bodyend="564"/>
+    <listofallmembers>
+      <member refid="structgpiod_1_1line__event_1a38f3eacf0564613e91b8aa75542cbb47" prot="public" virt="non-virtual"><scope>gpiod::line_event</scope><name>event_type</name></member>
+      <member refid="structgpiod_1_1line__event_1a8d081d42317ff0a22c812f14d5f8f88ca26affa3dac9afd55293addaf734932f5" prot="public" virt="non-virtual"><scope>gpiod::line_event</scope><name>FALLING_EDGE</name></member>
+      <member refid="structgpiod_1_1line__event_1a8d081d42317ff0a22c812f14d5f8f88ca1d749d97ab6e159c6a1ec65870dcb1b5" prot="public" virt="non-virtual"><scope>gpiod::line_event</scope><name>RISING_EDGE</name></member>
+      <member refid="structgpiod_1_1line__event_1afa64ecd8aae67c292be490e14d900290" prot="public" virt="non-virtual"><scope>gpiod::line_event</scope><name>source</name></member>
+      <member refid="structgpiod_1_1line__event_1a82eafecf13a12825abcc63b94c279a9f" prot="public" virt="non-virtual"><scope>gpiod::line_event</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgpiod__line__request__config" kind="struct" language="C++" prot="public">
+    <compoundname>gpiod_line_request_config</compoundname>
+    <includes refid="gpiod_8h" local="no">gpiod.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgpiod__line__request__config_1a130194a15629e74cc66c8c6f4b30a00d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* gpiod_line_request_config::consumer</definition>
+        <argsstring></argsstring>
+        <name>consumer</name>
+        <briefdescription>
+<para>Name of the consumer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1009" column="12" bodyfile="include/gpiod.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod__line__request__config_1a92e3ff6d9a7837006305f33428fa2c71" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gpiod_line_request_config::request_type</definition>
+        <argsstring></argsstring>
+        <name>request_type</name>
+        <briefdescription>
+<para>Request type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1011" column="5" bodyfile="include/gpiod.h" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod__line__request__config_1adffbf1e3a4b9a942c8753edbb0c12946" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gpiod_line_request_config::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Other configuration flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1013" column="5" bodyfile="include/gpiod.h" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure holding configuration of a line request. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/gpiod.h" line="1008" column="32" bodyfile="include/gpiod.h" bodystart="1008" bodyend="1015"/>
+    <listofallmembers>
+      <member refid="structgpiod__line__request__config_1a130194a15629e74cc66c8c6f4b30a00d" prot="public" virt="non-virtual"><scope>gpiod_line_request_config</scope><name>consumer</name></member>
+      <member refid="structgpiod__line__request__config_1adffbf1e3a4b9a942c8753edbb0c12946" prot="public" virt="non-virtual"><scope>gpiod_line_request_config</scope><name>flags</name></member>
+      <member refid="structgpiod__line__request__config_1a92e3ff6d9a7837006305f33428fa2c71" prot="public" virt="non-virtual"><scope>gpiod_line_request_config</scope><name>request_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

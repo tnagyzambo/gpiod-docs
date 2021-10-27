@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__misc" kind="group">
+    <compoundname>misc</compoundname>
+    <title>Stuff that didn&apos;t fit anywhere else</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1ga94cede78282eab7294ea190b44439b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* gpiod_version_string</definition>
+        <argsstring>(void) GPIOD_API</argsstring>
+        <name>gpiod_version_string</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the API version of the library as a human-readable string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Human-readable string containing the library version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="1765" column="12" declfile="include/gpiod.h" declline="1765" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Various libgpiod-related functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

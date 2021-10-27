@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>libgpiod public API</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the complete documentation of the public API made available to users of libgpiod.</para>
+<para>The public header is logically split into two high-level parts: the simple API and the low-level API. The former allows users to easily interact with the GPIOs in the system without dealing with the low-level data structures and resource control. The latter gives the user much more fine-grained control over the GPIO interface.</para>
+<para>The low-level API is further logically split into several parts such as: GPIO chip &amp; line operators, iterators, GPIO events handling etc.</para>
+<para>General note on error handling: all routines exported by libgpiod set errno to one of the error values defined in errno.h upon failure. The way of notifying the caller that an error occurred varies between functions, but in general a function that returns an int, returns -1 on error, while a function returning a pointer bails out on error condition by returning a NULL pointer. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

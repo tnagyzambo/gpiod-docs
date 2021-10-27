@@ -1,0 +1,1950 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__high__level" kind="group">
+    <compoundname>high_level</compoundname>
+    <title>High-level API</title>
+    <innerclass refid="structgpiod__ctxless__event__poll__fd" prot="public">gpiod_ctxless_event_poll_fd</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__high__level_1ga06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="group__high__level_1gga06fc87d81c62e9abb8790b6e5713c55bafeefd4fda9adc9dce302d360e94c6684" prot="public">
+          <name>GPIOD_CTXLESS_FLAG_OPEN_DRAIN</name>
+          <initializer>= GPIOD_BIT(0)</initializer>
+          <briefdescription>
+<para>The line is an open-drain port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga06fc87d81c62e9abb8790b6e5713c55bad0aaf4c003c1458594d9ee51204e914e" prot="public">
+          <name>GPIOD_CTXLESS_FLAG_OPEN_SOURCE</name>
+          <initializer>= GPIOD_BIT(1)</initializer>
+          <briefdescription>
+<para>The line is an open-source port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga06fc87d81c62e9abb8790b6e5713c55bac73a385a0bb0deb79a7cadcb8177c1e0" prot="public">
+          <name>GPIOD_CTXLESS_FLAG_BIAS_DISABLE</name>
+          <initializer>= GPIOD_BIT(2)</initializer>
+          <briefdescription>
+<para>The line has neither either pull-up nor pull-down resistor. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga06fc87d81c62e9abb8790b6e5713c55bacbaf6c53ae6216c3af22fe266e9b2f59" prot="public">
+          <name>GPIOD_CTXLESS_FLAG_BIAS_PULL_DOWN</name>
+          <initializer>= GPIOD_BIT(3)</initializer>
+          <briefdescription>
+<para>The line has pull-down resistor enabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga06fc87d81c62e9abb8790b6e5713c55ba18c4abd93567a7202cf97ccce57979ae" prot="public">
+          <name>GPIOD_CTXLESS_FLAG_BIAS_PULL_UP</name>
+          <initializer>= GPIOD_BIT(4)</initializer>
+          <briefdescription>
+<para>The line has pull-up resistor enabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Miscellaneous GPIO flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="94" column="6" bodyfile="include/gpiod.h" bodystart="94" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__high__level_1gadf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="group__high__level_1ggadf764cbdea00d65edcd07bb9953ad2b7a778f3f84088ef7e5921c7b4d1c0ebaf2" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_RISING_EDGE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Wait for rising edge events only. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Wait for falling edge events only. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggadf764cbdea00d65edcd07bb9953ad2b7ad30fcdabed63528589cc82492887879b" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_FALLING_EDGE</name>
+          <briefdescription>
+<para>Wait for both types of events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggadf764cbdea00d65edcd07bb9953ad2b7aa132c539c94c8075f57178dee85627ac" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_BOTH_EDGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Event types that the ctxless event monitor can wait for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="252" column="6" bodyfile="include/gpiod.h" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__high__level_1ga99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="group__high__level_1gga99fb83031ce9923c84392b4e92f956b5abacf1972a00bbca59ae8b2cc85264d85" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_TIMEOUT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Waiting for events timed out. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga99fb83031ce9923c84392b4e92f956b5ae31b303018125a845a8b04ba1c550b6d" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_RISING_EDGE</name>
+          <briefdescription>
+<para>Rising edge event occured. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1gga99fb83031ce9923c84392b4e92f956b5ac582a04e90467d92b9e10ab75d97b852" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_FALLING_EDGE</name>
+          <briefdescription>
+<para>Falling edge event occured. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Event types that can be passed to the ctxless event callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="264" column="6" bodyfile="include/gpiod.h" bodystart="264" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__high__level_1gabc6126af1d45847bc59afa0aa3216b04" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="group__high__level_1ggabc6126af1d45847bc59afa0aa3216b04a1157cf8e5aa9668135f86f2623d4c8c5" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_RET_ERR</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>Stop processing events and indicate an error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggabc6126af1d45847bc59afa0aa3216b04a1b05ae970a4f54029b7173664f9ef309" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_RET_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Continue processing events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggabc6126af1d45847bc59afa0aa3216b04a5f2e5a705e18f1024d436dc60d967f06" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_CB_RET_STOP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Stop processing events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return status values that the ctxless event callback can return. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="276" column="6" bodyfile="include/gpiod.h" bodystart="276" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__high__level_1gadc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="group__high__level_1ggadc29c2ff13d900c2f185ee95427fb06ca8116596864f4aa8edaa141c7f3600865" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_POLL_RET_STOP</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+<para>The event loop should stop processing events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggadc29c2ff13d900c2f185ee95427fb06ca97c074f23143888e9290411d0eccbdbc" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_POLL_RET_ERR</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>Polling error occurred (the polling function should set errno). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__high__level_1ggadc29c2ff13d900c2f185ee95427fb06ca8b723031d2ee9c689463bbe2642bf1bb" prot="public">
+          <name>GPIOD_CTXLESS_EVENT_POLL_RET_TIMEOUT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Poll timed out. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return status values that the ctxless event poll callback can return. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Positive value returned from the polling callback indicates the number of events that occurred on the set of monitored lines. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="305" column="6" bodyfile="include/gpiod.h" bodystart="305" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__high__level_1gae25bc1d06eb06334b2daa3af149fdf74" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* gpiod_ctxless_set_value_cb) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>gpiod_ctxless_set_value_cb</name>
+        <briefdescription>
+<para>Simple set value callback signature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="166" column="9" bodyfile="include/gpiod.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* gpiod_ctxless_event_handle_cb) (int, unsigned int, const struct timespec *, void *)</definition>
+        <argsstring>)(int, unsigned int, const struct timespec *, void *)</argsstring>
+        <name>gpiod_ctxless_event_handle_cb</name>
+        <briefdescription>
+<para>Simple event callback signature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The callback function takes the following arguments: event type (int), GPIO line offset (unsigned int), event timestamp (const struct timespec *) and a pointer to user data (void *).</para>
+<para>This callback is called by the ctxless event loop functions for each GPIO event. If the callback returns <ref refid="group__high__level_1ggabc6126af1d45847bc59afa0aa3216b04a1157cf8e5aa9668135f86f2623d4c8c5" kindref="member">GPIOD_CTXLESS_EVENT_CB_RET_ERR</ref>, it should also set errno. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="296" column="9" bodyfile="include/gpiod.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* gpiod_ctxless_event_poll_cb) (unsigned int, struct gpiod_ctxless_event_poll_fd *, const struct timespec *, void *)</definition>
+        <argsstring>)(unsigned int, struct gpiod_ctxless_event_poll_fd *, const struct timespec *, void *)</argsstring>
+        <name>gpiod_ctxless_event_poll_cb</name>
+        <briefdescription>
+<para>Simple event poll callback signature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The poll callback function takes the following arguments: number of lines (unsigned int), an array of file descriptors on which input events should be monitored (struct <ref refid="structgpiod__ctxless__event__poll__fd" kindref="compound">gpiod_ctxless_event_poll_fd</ref> *), poll timeout (const struct timespec *) and a pointer to user data (void *).</para>
+<para>The callback should poll for input events on the set of descriptors and return an appropriate value that can be interpreted by the event loop routine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="336" column="9" bodyfile="include/gpiod.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__high__level_1ga07eeae27ab2fdddbc88d3ac2fb56f2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_get_value</definition>
+        <argsstring>(const char *device, unsigned int offset, bool active_low, const char *consumer) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_get_value</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <briefdescription>
+<para>Read current value from a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset of the GPIO line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 or 1 (GPIO value) if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="115" column="5" declfile="include/gpiod.h" declline="115" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gaceb6cafac03115019560b413f8c8a9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_get_value_ext</definition>
+        <argsstring>(const char *device, unsigned int offset, bool active_low, const char *consumer, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_get_value_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Read current value from a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset of the GPIO line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 or 1 (GPIO value) if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="127" column="5" declfile="include/gpiod.h" declline="127" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga3462c2086e0424568dd98273e4aab1c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_get_value_multiple</definition>
+        <argsstring>(const char *device, const unsigned int *offsets, int *values, unsigned int num_lines, bool active_low, const char *consumer) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_get_value_multiple</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <briefdescription>
+<para>Read current values from a set of GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offsets of lines whose values should be read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer in which the values will be stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines, must be &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of the lines - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="141" column="5" declfile="include/gpiod.h" declline="141" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gac58f6bf700e80c203f0138e3de5c3c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_get_value_multiple_ext</definition>
+        <argsstring>(const char *device, const unsigned int *offsets, int *values, unsigned int num_lines, bool active_low, const char *consumer, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_get_value_multiple_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Read current values from a set of GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offsets of lines whose values should be read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer in which the values will be stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines, must be &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the lines. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="157" column="5" declfile="include/gpiod.h" declline="157" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga37b28cb4485662d6915b7967689221e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_set_value</definition>
+        <argsstring>(const char *device, unsigned int offset, int value, bool active_low, const char *consumer, gpiod_ctxless_set_value_cb cb, void *data) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_set_value</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gae25bc1d06eb06334b2daa3af149fdf74" kindref="member">gpiod_ctxless_set_value_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set value of a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the GPIO line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value (0 or 1). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional callback function that will be called right after setting the value. Users can use this, for example, to pause the execution after toggling a GPIO. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional user data that will be passed to the callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="181" column="5" declfile="include/gpiod.h" declline="181" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gaf494539c8485191f7622b10684beb293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_set_value_ext</definition>
+        <argsstring>(const char *device, unsigned int offset, int value, bool active_low, const char *consumer, gpiod_ctxless_set_value_cb cb, void *data, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_set_value_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gae25bc1d06eb06334b2daa3af149fdf74" kindref="member">gpiod_ctxless_set_value_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set value of a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the GPIO line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value (0 or 1). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional callback function that will be called right after setting the value. Users can use this, for example, to pause the execution after toggling a GPIO. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional user data that will be passed to the callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="200" column="5" declfile="include/gpiod.h" declline="200" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga4074f36d8e2e0a6895bd47ad9eac934f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_set_value_multiple</definition>
+        <argsstring>(const char *device, const unsigned int *offsets, const int *values, unsigned int num_lines, bool active_low, const char *consumer, gpiod_ctxless_set_value_cb cb, void *data) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_set_value_multiple</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gae25bc1d06eb06334b2daa3af149fdf74" kindref="member">gpiod_ctxless_set_value_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set values of multiple GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offsets of lines the values of which should be set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers containing new values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines, must be &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of the lines - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional callback function that will be called right after setting all values. Works the same as in <ref refid="group__high__level_1ga37b28cb4485662d6915b7967689221e0" kindref="member">gpiod_ctxless_set_value</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional user data that will be passed to the callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="219" column="5" declfile="include/gpiod.h" declline="219" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga0c80fa17889f341543041e0b970c41d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_set_value_multiple_ext</definition>
+        <argsstring>(const char *device, const unsigned int *offsets, const int *values, unsigned int num_lines, bool active_low, const char *consumer, gpiod_ctxless_set_value_cb cb, void *data, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_set_value_multiple_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gae25bc1d06eb06334b2daa3af149fdf74" kindref="member">gpiod_ctxless_set_value_cb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set values of multiple GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of offsets of lines the values of which should be set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of integers containing new values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines, must be &gt; 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional callback function that will be called right after setting all values. Works the same as in <ref refid="group__high__level_1ga37b28cb4485662d6915b7967689221e0" kindref="member">gpiod_ctxless_set_value</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional user data that will be passed to the callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the lines. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if the operation succeeds, -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="240" column="5" declfile="include/gpiod.h" declline="240" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga1f69ff2efb6d7793deb97e3e70f695ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_loop</definition>
+        <argsstring>(const char *device, unsigned int offset, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API GPIOD_DEPRECATED</argsstring>
+        <name>gpiod_ctxless_event_loop</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO line offset to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call for each line event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The way the ctxless event loop works is described in detail in <ref refid="group__high__level_1gaeba75a286f90fa851fc96b1c13869208" kindref="member">gpiod_ctxless_event_loop_multiple</ref> - this is just a wrapper aound this routine which calls it for a single GPIO line. </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function suffers from an issue where HW may not allow setting up both rising and falling egde interrupts at the same time. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="358" column="5" declfile="include/gpiod.h" declline="358" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gaeba75a286f90fa851fc96b1c13869208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_loop_multiple</definition>
+        <argsstring>(const char *device, const unsigned int *offsets, unsigned int num_lines, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API GPIOD_DEPRECATED</argsstring>
+        <name>gpiod_ctxless_event_loop_multiple</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on multiple GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of GPIO line offsets to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call on event occurrence. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The poll callback can be NULL in which case the routine will fall back to a basic, ppoll() based callback. </para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function suffers from an issue where HW may not allow setting up both rising and falling egde interrupts at the same time.</para>
+</xrefdescription></xrefsect></para>
+<para>Internally this routine opens the GPIO chip, requests the set of lines for both-edges events and calls the polling callback in a loop. The role of the polling callback is to detect input events on a set of file descriptors and notify the caller about the fds ready for reading.</para>
+<para>The ctxless event loop then reads each queued event from marked descriptors and calls the event callback. Both callbacks can stop the loop at any point.</para>
+<para>The poll_cb argument can be NULL in which case the function falls back to a default, ppoll() based callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="396" column="5" declfile="include/gpiod.h" declline="396" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gaf9ee5da5b5d94cbc1de2d20549152899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_monitor</definition>
+        <argsstring>(const char *device, int event_type, unsigned int offset, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_event_monitor</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>event_type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of events to listen for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO line offset to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call for each line event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The way the ctxless event loop works is described in detail in <ref refid="group__high__level_1ga3ac28eb59bbd31b8b2298f76047d377d" kindref="member">gpiod_ctxless_event_monitor_multiple</ref> - this is just a wrapper aound this routine which calls it for a single GPIO line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="421" column="5" declfile="include/gpiod.h" declline="421" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga7f37ae7830c6cc5221d5c44657fa2a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_monitor_ext</definition>
+        <argsstring>(const char *device, int event_type, unsigned int offset, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_event_monitor_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>event_type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on a single GPIO line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of events to listen for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO line offset to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call for each line event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The way the ctxless event loop works is described in detail in <ref refid="group__high__level_1ga3ac28eb59bbd31b8b2298f76047d377d" kindref="member">gpiod_ctxless_event_monitor_multiple</ref> - this is just a wrapper aound this routine which calls it for a single GPIO line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="446" column="5" declfile="include/gpiod.h" declline="446" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1ga3ac28eb59bbd31b8b2298f76047d377d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_monitor_multiple</definition>
+        <argsstring>(const char *device, int event_type, const unsigned int *offsets, unsigned int num_lines, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_event_monitor_multiple</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>event_type</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on multiple GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of events to listen for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of GPIO line offsets to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call on event occurrence. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The poll callback can be NULL in which case the routine will fall back to a basic, ppoll() based callback.</para>
+</simplesect>
+Internally this routine opens the GPIO chip, requests the set of lines for the type of events specified in the event_type parameter and calls the polling callback in a loop. The role of the polling callback is to detect input events on a set of file descriptors and notify the caller about the fds ready for reading.</para>
+<para>The ctxless event loop then reads each queued event from marked descriptors and calls the event callback. Both callbacks can stop the loop at any point.</para>
+<para>The poll_cb argument can be NULL in which case the function falls back to a default, ppoll() based callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="484" column="5" declfile="include/gpiod.h" declline="484" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gaa6c77ae2b0bb3089a662674c4f46d209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_event_monitor_multiple_ext</definition>
+        <argsstring>(const char *device, int event_type, const unsigned int *offsets, unsigned int num_lines, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data, int flags) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_event_monitor_multiple_ext</name>
+        <param>
+          <type>const char *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>event_type</declname>
+        </param>
+        <param>
+          <type>const unsigned int *</type>
+          <declname>offsets</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>num_lines</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active_low</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>consumer</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1ga76ec2dcc84c9a48543cfff76941a9028" kindref="member">gpiod_ctxless_event_poll_cb</ref></type>
+          <declname>poll_cb</declname>
+        </param>
+        <param>
+          <type><ref refid="group__high__level_1gaf417f5cff211fb696a784da5dbd29325" kindref="member">gpiod_ctxless_event_handle_cb</ref></type>
+          <declname>event_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Wait for events on multiple GPIO lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name, path, number or label of the gpiochip. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of events to listen for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of GPIO line offsets to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of lines to monitor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>active_low</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The active state of this line - true if low. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the consumer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum wait time for each iteration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poll_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call when waiting for events. Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function to call on event occurrence. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags for the lines. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 no errors were encountered, -1 if an error occurred. </para>
+</simplesect>
+<simplesect kind="note"><para>The poll callback can be NULL in which case the routine will fall back to a basic, ppoll() based callback.</para>
+</simplesect>
+Internally this routine opens the GPIO chip, requests the set of lines for the type of events specified in the event_type parameter and calls the polling callback in a loop. The role of the polling callback is to detect input events on a set of file descriptors and notify the caller about the fds ready for reading.</para>
+<para>The ctxless event loop then reads each queued event from marked descriptors and calls the event callback. Both callbacks can stop the loop at any point.</para>
+<para>The poll_cb argument can be NULL in which case the function falls back to a default, ppoll() based callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="524" column="5" declfile="include/gpiod.h" declline="524" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__high__level_1gab046d9cc1cb930b20b17906846c014ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gpiod_ctxless_find_line</definition>
+        <argsstring>(const char *name, char *chipname, size_t chipname_size, unsigned int *offset) GPIOD_API</argsstring>
+        <name>gpiod_ctxless_find_line</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>chipname</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chipname_size</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Determine the chip name and line offset of a line with given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the GPIO line to lookup. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chipname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer in which the name of the GPIO chip will be stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chipname_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the chip name buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an integer in which the line offset will be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 on error, 0 if the line with given name doesn&apos;t exist and 1 if the line was found. In the first two cases the contents of chipname and offset remain unchanged. </para>
+</simplesect>
+<simplesect kind="note"><para>The chip name is truncated if the buffer can&apos;t hold its entire size. </para>
+</simplesect>
+<simplesect kind="attention"><para>GPIO line names are not unique in the linux kernel, neither globally nor within a single chip. This function finds the first line with given name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="548" column="5" declfile="include/gpiod.h" declline="548" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple high-level routines for straightforward GPIO manipulation without the need to use the gpiod_* structures or to keep track of resources. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

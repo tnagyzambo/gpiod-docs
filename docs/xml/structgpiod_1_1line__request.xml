@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgpiod_1_1line__request" kind="struct" language="C++" prot="public">
+    <compoundname>gpiod::line_request</compoundname>
+    <includes refid="gpiod_8hpp" local="no">gpiod.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdc" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>@12</name>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcad72d3542796d55d167453813e591a170" prot="public">
+          <name>DIRECTION_AS_IS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Request for values, don&apos;t change the direction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcaf04a4bc34bfab5bf10c969771c4b4fd6" prot="public">
+          <name>DIRECTION_INPUT</name>
+          <briefdescription>
+<para>Request for reading line values. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca7e7fea2a8f7c62027506d76b62407eba" prot="public">
+          <name>DIRECTION_OUTPUT</name>
+          <briefdescription>
+<para>Request for driving the GPIO lines. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca51b4994268864d4f55be437c1deefaef" prot="public">
+          <name>EVENT_FALLING_EDGE</name>
+          <briefdescription>
+<para>Listen for falling edge events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca1ba98fb53246c64160676584cf31b349" prot="public">
+          <name>EVENT_RISING_EDGE</name>
+          <briefdescription>
+<para>Listen for rising edge events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcae367dfaf78285d018f34897696990a88" prot="public">
+          <name>EVENT_BOTH_EDGES</name>
+          <briefdescription>
+<para>Listen for all types of events. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Request types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="219" column="6" bodyfile="bindings/cxx/gpiod.hpp" bodystart="219" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1affd7e8e87fb996e434ea40a58ab99dbf" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_ACTIVE_LOW</definition>
+        <argsstring></argsstring>
+        <name>FLAG_ACTIVE_LOW</name>
+        <briefdescription>
+<para>Set the active state to &apos;low&apos; (high is the default). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="234" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1aee91ce6ed1a546d60880a1c79945dfcd" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_OPEN_SOURCE</definition>
+        <argsstring></argsstring>
+        <name>FLAG_OPEN_SOURCE</name>
+        <briefdescription>
+<para>The line is an open-source port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="236" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1a2d0a6a3204e420c452bd7e8b8c8b97c9" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_OPEN_DRAIN</definition>
+        <argsstring></argsstring>
+        <name>FLAG_OPEN_DRAIN</name>
+        <briefdescription>
+<para>The line is an open-drain port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="238" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1a18f1e2e7e708d81ede507cb59fa03fcb" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_BIAS_DISABLE</definition>
+        <argsstring></argsstring>
+        <name>FLAG_BIAS_DISABLE</name>
+        <briefdescription>
+<para>The line has neither pull-up nor pull-down resistor enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="240" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1ac5ceaecc90f727c0ff7105c7a346bc23" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_BIAS_PULL_DOWN</definition>
+        <argsstring></argsstring>
+        <name>FLAG_BIAS_PULL_DOWN</name>
+        <briefdescription>
+<para>The line has a configurable pull-down resistor enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="242" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1ad5c956787d97c6746dc13bbc3fd393f7" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__common_1ga21a3297091bbee8cd4829f8a681a085b" kindref="member">GPIOD_API</ref> const ::std::bitset&lt; 32 &gt;</type>
+        <definition>GPIOD_API const ::std::bitset&lt;32&gt; gpiod::line_request::FLAG_BIAS_PULL_UP</definition>
+        <argsstring></argsstring>
+        <name>FLAG_BIAS_PULL_UP</name>
+        <briefdescription>
+<para>The line has a configurable pull-up resistor enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="244" column="38" bodyfile="bindings/cxx/gpiod.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1a9549758487b5a22a4a72f7fb8cf85070" prot="public" static="no" mutable="no">
+        <type>::std::string</type>
+        <definition>::std::string gpiod::line_request::consumer</definition>
+        <argsstring></argsstring>
+        <name>consumer</name>
+        <briefdescription>
+<para>Consumer name to pass to the request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="247" column="15" bodyfile="bindings/cxx/gpiod.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1a4e68c029d291653f016115ce5022f9f3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gpiod::line_request::request_type</definition>
+        <argsstring></argsstring>
+        <name>request_type</name>
+        <briefdescription>
+<para>Type of the request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="249" column="5" bodyfile="bindings/cxx/gpiod.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpiod_1_1line__request_1a379f2a1e0be0938b726d6d21a1473f26" prot="public" static="no" mutable="no">
+        <type>::std::bitset&lt; 32 &gt;</type>
+        <definition>::std::bitset&lt;32&gt; gpiod::line_request::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Additional request flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bindings/cxx/gpiod.hpp" line="251" column="15" bodyfile="bindings/cxx/gpiod.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores the configuration for line requests. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bindings/cxx/gpiod.hpp" line="215" column="1" bodyfile="bindings/cxx/gpiod.hpp" bodystart="214" bodyend="253"/>
+    <listofallmembers>
+      <member refid="structgpiod_1_1line__request_1a9549758487b5a22a4a72f7fb8cf85070" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>consumer</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcad72d3542796d55d167453813e591a170" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>DIRECTION_AS_IS</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcaf04a4bc34bfab5bf10c969771c4b4fd6" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>DIRECTION_INPUT</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca7e7fea2a8f7c62027506d76b62407eba" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>DIRECTION_OUTPUT</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdcae367dfaf78285d018f34897696990a88" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>EVENT_BOTH_EDGES</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca51b4994268864d4f55be437c1deefaef" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>EVENT_FALLING_EDGE</name></member>
+      <member refid="structgpiod_1_1line__request_1ae7250f0f89f6d45df74a900bd5230cdca1ba98fb53246c64160676584cf31b349" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>EVENT_RISING_EDGE</name></member>
+      <member refid="structgpiod_1_1line__request_1affd7e8e87fb996e434ea40a58ab99dbf" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_ACTIVE_LOW</name></member>
+      <member refid="structgpiod_1_1line__request_1a18f1e2e7e708d81ede507cb59fa03fcb" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_BIAS_DISABLE</name></member>
+      <member refid="structgpiod_1_1line__request_1ac5ceaecc90f727c0ff7105c7a346bc23" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_BIAS_PULL_DOWN</name></member>
+      <member refid="structgpiod_1_1line__request_1ad5c956787d97c6746dc13bbc3fd393f7" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_BIAS_PULL_UP</name></member>
+      <member refid="structgpiod_1_1line__request_1a2d0a6a3204e420c452bd7e8b8c8b97c9" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_OPEN_DRAIN</name></member>
+      <member refid="structgpiod_1_1line__request_1aee91ce6ed1a546d60880a1c79945dfcd" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>FLAG_OPEN_SOURCE</name></member>
+      <member refid="structgpiod_1_1line__request_1a379f2a1e0be0938b726d6d21a1473f26" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>flags</name></member>
+      <member refid="structgpiod_1_1line__request_1a4e68c029d291653f016115ce5022f9f3" prot="public" virt="non-virtual"><scope>gpiod::line_request</scope><name>request_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

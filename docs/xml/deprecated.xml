@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Global <ref refid="group__high__level_1ga1f69ff2efb6d7793deb97e3e70f695ef" kindref="member">gpiod_ctxless_event_loop</ref>  (const char *device, unsigned int offset, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API GPIOD_DEPRECATED</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>This function suffers from an issue where HW may not allow setting up both rising and falling egde interrupts at the same time.  </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group__high__level_1gaeba75a286f90fa851fc96b1c13869208" kindref="member">gpiod_ctxless_event_loop_multiple</ref>  (const char *device, const unsigned int *offsets, unsigned int num_lines, bool active_low, const char *consumer, const struct timespec *timeout, gpiod_ctxless_event_poll_cb poll_cb, gpiod_ctxless_event_handle_cb event_cb, void *data) GPIOD_API GPIOD_DEPRECATED</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>This function suffers from an issue where HW may not allow setting up both rising and falling egde interrupts at the same time. </para>
+</listitem>
+<varlistentry><term>Global <ref refid="group__line__info_1gade14511253e8d4d754fe8978607c459c" kindref="member">gpiod_line_needs_update</ref>  (struct gpiod_line *line) GPIOD_API GPIOD_DEPRECATED</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000003"/>This mechanism no longer exists in the library and this function does nothing. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

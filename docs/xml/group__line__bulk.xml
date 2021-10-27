@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__line__bulk" kind="group">
+    <compoundname>line_bulk</compoundname>
+    <title>Operating on multiple lines</title>
+    <innerclass refid="structgpiod__line__bulk" prot="public">gpiod_line_bulk</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__line__bulk_1gacaedef36df4faba89e19f7dbfab5cfec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gpiod_line_bulk_init</definition>
+        <argsstring>(struct gpiod_line_bulk *bulk)</argsstring>
+        <name>gpiod_line_bulk_init</name>
+        <param>
+          <type>struct <ref refid="structgpiod__line__bulk" kindref="compound">gpiod_line_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a GPIO bulk object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This routine simply sets the internally held number of lines to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="742" column="20" bodyfile="include/gpiod.h" bodystart="742" bodyend="745"/>
+        <references refid="structgpiod__line__bulk_1a16a716968d1a7b6bbdf6e66d43807220" compoundref="gpiod_8h" startline="725">gpiod_line_bulk::num_lines</references>
+      </memberdef>
+      <memberdef kind="function" id="group__line__bulk_1gae22ad8a61865e85bf913eb9808aa82bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gpiod_line_bulk_add</definition>
+        <argsstring>(struct gpiod_line_bulk *bulk, struct gpiod_line *line)</argsstring>
+        <name>gpiod_line_bulk_add</name>
+        <param>
+          <type>struct <ref refid="structgpiod__line__bulk" kindref="compound">gpiod_line_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <param>
+          <type>struct gpiod_line *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Add a single line to a GPIO bulk object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="752" column="20" bodyfile="include/gpiod.h" bodystart="752" bodyend="756"/>
+        <references refid="structgpiod__line__bulk_1a88dd5d063cad2cb6b00fdcdf212ca1eb" compoundref="gpiod_8h" startline="723">gpiod_line_bulk::lines</references>
+        <references refid="structgpiod__line__bulk_1a16a716968d1a7b6bbdf6e66d43807220" compoundref="gpiod_8h" startline="725">gpiod_line_bulk::num_lines</references>
+      </memberdef>
+      <memberdef kind="function" id="group__line__bulk_1ga5d9bfd50ecc1ec1afbf71f3093a13a9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>struct gpiod_line *</type>
+        <definition>static struct gpiod_line* gpiod_line_bulk_get_line</definition>
+        <argsstring>(struct gpiod_line_bulk *bulk, unsigned int offset)</argsstring>
+        <name>gpiod_line_bulk_get_line</name>
+        <param>
+          <type>struct <ref refid="structgpiod__line__bulk" kindref="compound">gpiod_line_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the line handle from a line bulk object at given offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line offset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Line handle at given offset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="765" column="1" bodyfile="include/gpiod.h" bodystart="765" bodyend="768"/>
+        <references refid="structgpiod__line__bulk_1a88dd5d063cad2cb6b00fdcdf212ca1eb" compoundref="gpiod_8h" startline="723">gpiod_line_bulk::lines</references>
+      </memberdef>
+      <memberdef kind="function" id="group__line__bulk_1ga32b3bcbf31f23f0f117435dd15312139" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>static unsigned int gpiod_line_bulk_num_lines</definition>
+        <argsstring>(struct gpiod_line_bulk *bulk)</argsstring>
+        <name>gpiod_line_bulk_num_lines</name>
+        <param>
+          <type>struct <ref refid="structgpiod__line__bulk" kindref="compound">gpiod_line_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the number of GPIO lines held by this line bulk object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of lines held by this line bulk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="776" column="1" bodyfile="include/gpiod.h" bodystart="776" bodyend="779"/>
+        <references refid="structgpiod__line__bulk_1a16a716968d1a7b6bbdf6e66d43807220" compoundref="gpiod_8h" startline="725">gpiod_line_bulk::num_lines</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__line__bulk_1gad23c9460c53f7177af122ca06934074e" prot="public" static="no">
+        <name>GPIOD_LINE_BULK_MAX_LINES</name>
+        <initializer>64</initializer>
+        <briefdescription>
+<para>Maximum number of GPIO lines that can be requested at once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="713" column="9" bodyfile="include/gpiod.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__line__bulk_1ga27acc32b17cade8b2c22831d41e7d48e" prot="public" static="no">
+        <name>GPIOD_LINE_BULK_INITIALIZER</name>
+        <initializer>{ { NULL }, 0 }</initializer>
+        <briefdescription>
+<para>Static initializer for GPIO bulk objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro simply sets the internally held number of lines to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="734" column="9" bodyfile="include/gpiod.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__line__bulk_1ga636ff9b980d5b02b31876ab909326b57" prot="public" static="no">
+        <name>gpiod_line_bulk_foreach_line</name>
+        <param><defname>bulk</defname></param>
+        <param><defname>line</defname></param>
+        <param><defname>lineptr</defname></param>
+        <initializer>	for ((lineptr) = (bulk)-&gt;lines, (line) = *(lineptr);		\
+	     (lineptr) &lt;= (bulk)-&gt;lines + ((bulk)-&gt;num_lines - 1);	\
+	     (lineptr)++, (line) = *(lineptr))</initializer>
+        <briefdescription>
+<para>Iterate over all line handles held by a line bulk object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO line handle. On each iteration, the subsequent line handle is assigned to this pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a GPIO line handle used to store the loop state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="788" column="9" bodyfile="include/gpiod.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__line__bulk_1ga464e833758432640ee9aa821715a84a4" prot="public" static="no">
+        <name>gpiod_line_bulk_foreach_line_off</name>
+        <param><defname>bulk</defname></param>
+        <param><defname>line</defname></param>
+        <param><defname>offset</defname></param>
+        <initializer>	for ((offset) = 0, (line) = (bulk)-&gt;lines[0];			\
+	     (offset) &lt; (bulk)-&gt;num_lines;				\
+	     (offset)++, (line) = (bulk)-&gt;lines[(offset)])</initializer>
+        <briefdescription>
+<para>Iterate over all line handles held by a line bulk object (integer counter variant). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bulk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line bulk object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO line handle. On each iteration, the subsequent line handle is assigned to this pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer variable used to store the loop state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This is a variant of <ref refid="group__line__bulk_1ga636ff9b980d5b02b31876ab909326b57" kindref="member">gpiod_line_bulk_foreach_line</ref> which uses an integer variable (either signed or unsigned) to store the loop state. This offset variable is guaranteed to correspond to the offset of the current line in the bulk-&gt;lines array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="806" column="9" bodyfile="include/gpiod.h" bodystart="806" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convenience data structures and helper functions for storing and operating on multiple lines at once. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

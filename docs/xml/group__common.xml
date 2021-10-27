@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__common" kind="group">
+    <compoundname>common</compoundname>
+    <title>Common helper macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__common_1ga21a3297091bbee8cd4829f8a681a085b" prot="public" static="no">
+        <name>GPIOD_API</name>
+        <initializer>__attribute__((visibility(&quot;default&quot;)))</initializer>
+        <briefdescription>
+<para>Makes symbol visible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="62" column="9" bodyfile="include/gpiod.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__common_1ga528b9a1ff19b8a79ad6fe30ee083759d" prot="public" static="no">
+        <name>GPIOD_UNUSED</name>
+        <initializer>__attribute__((unused))</initializer>
+        <briefdescription>
+<para>Marks a function argument or variable as potentially unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="67" column="9" bodyfile="include/gpiod.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__common_1gad1bb70753f220c105f0cef3174a060dc" prot="public" static="no">
+        <name>GPIOD_BIT</name>
+        <param><defname>nr</defname></param>
+        <initializer>(1UL &lt;&lt; (nr))</initializer>
+        <briefdescription>
+<para>Shift 1 by given offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 shifted by nr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="74" column="9" bodyfile="include/gpiod.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__common_1ga6f92d33a4d978d8f9d416b09643e21bb" prot="public" static="no">
+        <name>GPIOD_DEPRECATED</name>
+        <initializer>__attribute__((deprecated))</initializer>
+        <briefdescription>
+<para>Marks a public function as deprecated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/gpiod.h" line="79" column="9" bodyfile="include/gpiod.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Commonly used utility macros. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
